@@ -22,7 +22,13 @@
     <v-form v-else v-model="valid">
       <v-text-field label="Name" required :rules="nameRules" v-model="name"></v-text-field>
       <v-text-field label="Email" required :rules="emailRules" v-model="email"></v-text-field>
-      <v-text-field label="Phone" v-model="phone"></v-text-field>
+      <v-text-field
+        label="Phone"
+        required
+        :rules="phoneRules"
+        mask="(###) ### - ####"
+        v-model="phone"
+      ></v-text-field>
       <v-btn @click="submit" :disabled="!valid">Submit</v-btn>
     </v-form>
   </div>
@@ -46,6 +52,10 @@ export default {
         email =>
           /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(email) ||
           "Email must be valid"
+      ],
+      phoneRules: [
+        phone => !!phone || "Phone is required",
+        phone => phone.length >= 7 || "Phone number should be at least 7 digits"
       ]
     };
   },
