@@ -20,7 +20,7 @@
       <v-btn to="/">Go to homepage</v-btn>
     </div>
     <v-form v-else v-model="valid">
-      <v-text-field label="Name" v-model="name"></v-text-field>
+      <v-text-field label="Name" required :rules="nameRules" v-model="name"></v-text-field>
       <v-text-field label="Email" v-model="email"></v-text-field>
       <v-text-field label="Phone" v-model="phone"></v-text-field>
       <v-btn @click="submit" :disabled="!valid">Submit</v-btn>
@@ -37,7 +37,7 @@ export default {
       phone: "",
       submitted: false,
       valid: true,
-      nameRules: []
+      nameRules: [name => !!name || "Name is required"]
     };
   },
   methods: {
