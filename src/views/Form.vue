@@ -21,7 +21,7 @@
     </div>
     <v-form v-else v-model="valid">
       <v-text-field label="Name" required :rules="nameRules" v-model="name"></v-text-field>
-      <v-text-field label="Email" v-model="email"></v-text-field>
+      <v-text-field label="Email" required :rules="emailRules" v-model="email"></v-text-field>
       <v-text-field label="Phone" v-model="phone"></v-text-field>
       <v-btn @click="submit" :disabled="!valid">Submit</v-btn>
     </v-form>
@@ -37,7 +37,16 @@ export default {
       phone: "",
       submitted: false,
       valid: true,
-      nameRules: [name => !!name || "Name is required"]
+      nameRules: [
+        name => !!name || "Name is required",
+        name => name.length > 2 || "Name must be longer than 2 characters"
+      ],
+      emailRules: [
+        email => !!email || "Email is required",
+        email =>
+          /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(email) ||
+          "Email must be valid"
+      ]
     };
   },
   methods: {
