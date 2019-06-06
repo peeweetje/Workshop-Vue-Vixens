@@ -61,6 +61,7 @@ export default {
   },
   methods: {
     submit() {
+      this.$store.dispatch("clearFavorites");
       this.submitted = true;
     }
   }
