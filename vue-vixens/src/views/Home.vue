@@ -20,7 +20,7 @@
     </div>
 
     <div class="panel bisque">
-      <h2>Contact Us</h2>
+      <h2>{{ $t("contact") }} </h2>
     </div>
     <div class="panel tall-panel dark-mint">
       <h2>Pet of the Month</h2>

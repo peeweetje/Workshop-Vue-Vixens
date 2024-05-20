@@ -8,9 +8,9 @@ import Pets from './views/Pets';
 import Favorites from './views/Favorites';
 import Form from './views/Form';
 import store from './store';
+import i18n from './i18n';
 
 Vue.use(Vuetify);
-
 Vue.use(VueRouter);
 
 const routes = [
@@ -20,10 +20,10 @@ const routes = [
   { path: '/form', component: Form },
 ];
 const router = new VueRouter({ routes });
-
 Vue.config.productionTip = false;
 
 new Vue({
+  i18n,
   router,
   store,
   render: (h) => h(App),
