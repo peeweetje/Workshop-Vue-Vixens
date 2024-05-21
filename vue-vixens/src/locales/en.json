@@ -1,3 +1,8 @@
 {
-  "contact": "Contact us"
+  "home": {
+    "contact": "Contact us",
+    "Adoptable-Pets": "Adoptable pets",
+    "Pet-Products": "Pet Products",
+    "pet-food": "Pet food"
+  }
 }

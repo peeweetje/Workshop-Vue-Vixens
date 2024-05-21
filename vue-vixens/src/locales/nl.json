@@ -1,3 +1,8 @@
 {
-  "contact": "contact"
+  "home": {
+    "contact": "Contact",
+    "Adoptable-Pets": "Adopteer een dier!",
+    "pet-products": "Dier benodigheden",
+    "pet-food": "Dieren voeding"
+  }
 }

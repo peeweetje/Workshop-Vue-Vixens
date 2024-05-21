@@ -1,8 +1,8 @@
 <template>
   <div class="wrapper">
     <div class="panel tall-panel light-mint">
-      <h2>Pet Products</h2>
-      <p>Premium Puppy Chow</p>
+      <h2>{{ $t("home.pet-products") }}</h2>
+      <p>{{ $t("home.pet-food") }}</p>
       <p>Kibble, sale in bulk, $20/lb</p>
       <img
         src="https://raw.githubusercontent.com/VueVixens/projects/master/petshop/images/food.png"
@@ -12,7 +12,7 @@
       <h2>Donate</h2>
     </div>
     <div class="panel tall-panel light-brown">
-      <h2>Adoptable Pets</h2>
+      <h2>{{ $t("home.Adoptable-Pets") }}</h2>
       <p>Fisher, Chihuahua, age 3</p>
       <img
         src="https://raw.githubusercontent.com/VueVixens/projects/master/petshop/images/chihuahua.jpg"
@@ -20,7 +20,7 @@
     </div>
 
     <div class="panel bisque">
-      <h2>{{ $t("contact") }} </h2>
+      <h2>{{ $t("home.contact") }} </h2>
     </div>
     <div class="panel tall-panel dark-mint">
       <h2>Pet of the Month</h2>
