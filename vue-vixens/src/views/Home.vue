@@ -3,13 +3,13 @@
     <div class="panel tall-panel light-mint">
       <h2>{{ $t("home.pet-products") }}</h2>
       <p>{{ $t("home.pet-food") }}</p>
-      <p>Kibble, sale in bulk, $20/lb</p>
+      <p>{{ $t("home.affordable-food") }}</p>
       <img
         src="https://raw.githubusercontent.com/VueVixens/projects/master/petshop/images/food.png"
       >
     </div>
     <div class="panel bisque">
-      <h2>Donate</h2>
+      <h2>{{ $t("home.donate") }}</h2>
     </div>
     <div class="panel tall-panel light-brown">
       <h2>{{ $t("home.Adoptable-Pets") }}</h2>
