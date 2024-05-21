@@ -1,10 +1,17 @@
 {
   "home": {
     "contact": "Contact",
-    "Adoptable-Pets": "Adopteer een dier!",
+    "adoptable-pets": "Adopteer een dier!",
     "pet-products": "Dier benodigheden",
     "pet-food": "Dieren voeding",
     "affordable-food": "Kibbel, Voordelig voedsel!!! nu 20 euro",
-    "donate": "Donatie"
+    "donate": "Donatie",
+    "animal-name": "Fisher, Chihuahua, 3 jaar",
+    "pet-of-the-Month": "Dier van de maand",
+    "introduce-pet": "ontmoet Stanley, een jonge French Bulldog",
+    "success-Stories": "Succesvolle verhalen",
+    "forever-home": "Bennie heeft zijn voor altijd huis gevonden!",
+    "special-events": "Speciale evenementen",
+    "pet-ownership": "Meer informatie over het bezit van huisdieren"
   }
 }

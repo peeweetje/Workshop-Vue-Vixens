@@ -1,10 +1,17 @@
 {
   "home": {
     "contact": "Contact us",
-    "Adoptable-Pets": "Adoptable pets",
-    "Pet-Products": "Pet Products",
+    "adoptable-Pets": "Adoptable pets",
+    "pet-Products": "Pet Products",
     "pet-food": "Pet food",
     "affordable-food": "Kibbel, Affordable food!!!  now 20 Dollars",
-    "donate": "Donate"
+    "donate": "Donate",
+    "animal-name": "Fisher, Chihuahua, age 3",
+    "pet-of-the-Month": "Pet of the month",
+    "introduce-pet": "Meet Stanley, A young French Bulldog",
+    "success-Stories": "Success stories",
+    "forever-home": "Bennie found his forever home!",
+    "special-events": "Special Events",
+    "pet-ownership": "Learn About Pet Ownership"
   }
 }
